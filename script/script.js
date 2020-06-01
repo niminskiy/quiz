@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const btnOpenModal = document.querySelector('#btnOpenModal');
     const modalBlock = document.querySelector('#modalBlock');
     const closeModal = document.querySelector('#closeModal');
+    const questionTitle = document.querySelector('#question');
 
     btnOpenModal.addEventListener('click', () => {
         modalBlock.classList.add('d-block');
@@ -14,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const playTest = () => {
         const renderQuestions = () => {
-            console.log('render')
-        }        
+            questionTitle.textContent = 'Какого цвета бургер вы хотите?';        }
+        renderQuestions();        
     }
 })
